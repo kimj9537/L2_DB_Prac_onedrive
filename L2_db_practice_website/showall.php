@@ -71,6 +71,23 @@
                 </div>
                 <!-- / Heading and subtitle -->
                 
+                <!-- Rating Area -->
+                
+                <div class="flex-container">
+                    
+                    <div class="star-ratings-sprite">
+                    
+                    </div> <!-- star rating div -->
+                
+                    <div class="actual-rating">
+                        (<?php echo $find_rs['User Rating'] ?> based on # ratings)
+                    
+                    </div> <!-- / text rating div -->
+                    
+                </div> <!-- / ratings flexbox -->
+                
+                <!-- / Rating Area -->
+                
                 <!-- Price -->
                 
             <?php 
@@ -78,7 +95,6 @@
                if(find_rs['Price'] == 0) {    
                     ?>
                <p>
-                   
                    Free
                    <?php 
                         if($find_rs['In App'] == 1) 
@@ -89,8 +105,7 @@
                             
                         } // end In App if
                    ?>
-                   (In app Purchase)
-                   
+                 
                 </p>
                 
                <?php
