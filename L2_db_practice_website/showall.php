@@ -58,7 +58,7 @@
                         
                         &nbsp; &nbsp; | &nbsp; &nbsp;
                         
-                        <?php echo $find_rs[''] ?>
+                        <?php echo $find_rs['Developer Name'] ?>
                         
                     </div> <!-- / subtitle -->
                     
@@ -80,7 +80,7 @@
                     </div> <!-- star rating div -->
                 
                     <div class="actual-rating">
-                        (<?php echo $find_rs['User Rating'] ?> based on # ratings)
+                        (<?php echo $find_rs['Average User Rating'] ?> based on <?php echo number_format ($find_rs['User Rating Count']) ?> ratings)
                     
                     </div> <!-- / text rating div -->
                     
@@ -92,12 +92,12 @@
                 
             <?php 
                 
-               if(find_rs['Price'] == 0) {    
+               if($find_rs['Price'] == 0) {    
                     ?>
                <p>
                    Free
                    <?php 
-                        if($find_rs['In App'] == 1) 
+                        if($find_rs['Purchases?'] == 1) 
                         {
                             ?>
                                 (In App Purchase)
