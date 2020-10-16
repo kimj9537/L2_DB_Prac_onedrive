@@ -76,6 +76,7 @@
                 <div class="flex-container">
                     
                     <div class="star-ratings-sprite">
+                        <span style="width:<?php echo $find_rs['Average User Rating'] / 5 * 100; ?>%" class="star-ratings-sprite-rating"></span>
                     
                     </div> <!-- star rating div -->
                 
@@ -89,6 +90,18 @@
                 <!-- / Rating Area -->
                 
                 <!-- Price -->
+            <p>
+                <!-- Developer, Genre and Age... -->
+                <b>Developer:</b><?php echo $find_rs['Developer Name'] ?><br />
+                <b>Genre:</b> <?php echo $find_rs['Genre'] ?><br />
+                Suitable for ages <b><?php echo $find_rs['Average User Rating'] ?></b> and up
+                
+                
+            </p>
+                
+            <p>
+                <i><?php echo $find_rs['Description'] ?></i>    
+            </p>
                 
             <?php 
                 
