@@ -42,7 +42,7 @@
                         
                         &nbsp; &nbsp; | &nbsp; &nbsp;
                         
-                        <?php echo $find_rs['Developer Name'] ?>
+                        <?php echo $find_rs['Subtitle'] ?>
                         
                     </div> <!-- / subtitle -->
                     
@@ -72,6 +72,38 @@
                 </div> <!-- / ratings flexbox -->
                 
                 <!-- / Rating Area -->
+                
+                   <?php 
+
+                   if($find_rs['Price'] == 0) {    
+                        ?>
+                   <p>
+                       Free
+                       <?php 
+                            if($find_rs['Purchases?'] == 1) 
+                            {
+                                ?>
+                                    (In App Purchase)
+                                <?php
+
+                            } // end In App if
+                       ?>
+
+                    </p>
+
+                   <?php
+                   } // end price if
+
+                   else {
+
+                       ?>
+                   <b>Price:</b> $<?php echo $find_rs['Price'] ?>
+
+                   <?php
+
+                   }
+
+                ?>
                 
                 <!-- Price -->
             <p>
