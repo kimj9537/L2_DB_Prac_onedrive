@@ -10,6 +10,12 @@
                         <input class="submit" type="submit" name="find_game_name" value="&#xf002;" />
 
                  </form>
+             
+                <form class="search form" method="post" action="free.php" enctype="multipart/form-data">
+             
+                <input class="submit free" type="submit" name="free" value="Free with No In App Purchase" &nbsp; &#xf002 />
+             
+                </form>
 
             
         </div> <!-- / side bar -->
