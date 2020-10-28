@@ -3,12 +3,12 @@
             if($count < 1) {
                 
                 ?>
-            <div class="error"></div>
+            <div class="error">
             
                 Sorry! There are no results that match your search.
                 Please use the search box in the side bar to try again.
             
-            <div/> <!-- end error -->
+            </div> <!-- end error -->
             
             <?php
             } // end no results if 
