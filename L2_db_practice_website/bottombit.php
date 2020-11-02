@@ -11,11 +11,31 @@
 
                  </form>
              
-                <form class="search form" method="post" action="free.php" enctype="multipart/form-data">
+                <form class="searchform" method="post" action="free.php" enctype="multipart/form-data">
              
-                <input class="submit free" type="submit" name="free" value="Free with No In App Purchase" &nbsp; &#xf002 />
+                <input class="submit free" type="submit" name="free" value="Free with No In App Purchase &nbsp; &#xf002" />
              
                 </form>
+                
+                <br />
+                <hr />
+                <br />
+             
+                <div class="advanced-frame">
+                    
+                <h2>Advanced Search</h2>
+                    
+                <form class="searchform" method="post" action="advanced.php" enctype="multipart/form-data">
+                
+                <input class="adv" type="text" name="app_name" size="25" value="" placeholder="App Name / title..."/>
+                    
+                <input class="adv" type="text" name="dev_name" size="25" value="" placeholder="Developer..."/>
+                    
+                <input class="submit advanced-button" type="submit" name="advanced" value="Search &nbsp; &#xf002;" />   
+                    
+                </form>
+                    
+                </div> <!-- / advanced frame -->
 
             
         </div> <!-- / side bar -->
