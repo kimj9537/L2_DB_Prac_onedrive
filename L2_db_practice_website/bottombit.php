@@ -30,8 +30,34 @@
                 <input class="adv" type="text" name="app_name" size="25" value="" placeholder="App Name / title..."/>
                     
                 <input class="adv" type="text" name="dev_name" size="25" value="" placeholder="Developer..."/>
+                
+                <!-- Genre Dropdown -->
                     
-                <input class="submit advanced-button" type="submit" name="advanced" value="Search &nbsp; &#xf002;" />   
+                <select class="search adv" name="genre">
+                    
+                <option value="" disabled selected>Genre... </option>
+                    
+                <!--- get options form database -->
+                <?php
+                    $genre_sql="SELECT * FROM `L2_prac_genre` ORDER BY `L2_prac_genre`.`Genre` ASC";
+                    $genre_query=mysqli_query($dbconnect, $genre_sql);
+                    $genre_rs=mysqli_fetch_assoc($genre_query);
+                    
+                    do {
+                        ?>
+                    <option value="<?php echo $genre_rs['Genre']; ?>"><?php echo $genre_rs['Genre']; ?></option>
+                    
+                    <?php
+                        
+                    }   // end genre do loop
+                    
+                    while ($genre_rs=mysqli_fetch_assoc($genre_query))
+                    
+                ?>  
+                    
+                </select>
+                    
+                  <input class="submit advanced-button" type="submit" name="advanced" value="Search &nbsp; &#xf002;" />  
                     
                 </form>
                     
