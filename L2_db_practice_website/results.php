@@ -119,6 +119,7 @@
                 <i><?php echo $find_rs['Description'] ?></i>    
             </p>
 
+                
             </div> <!-- / results -->
             
             <br />
