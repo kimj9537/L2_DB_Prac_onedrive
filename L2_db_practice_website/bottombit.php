@@ -101,7 +101,7 @@
                     
                     <div class="adv-txt">
                         Age:
-                    </div> <!-- / age label -->
+                    </div> <!-- / rating label -->
                     
                     <div>
                         <select class="search adv" name="age_more_less">
@@ -112,7 +112,7 @@
                     </div> <!-- / age drop down -->
                     
                     <div> 
-                    <input class="adv" type="text" name="rating" size="3" value="0" placeholder=""/>
+                    <input class="adv" type="text" name="age" size="3" value="0" placeholder=""/>
                     
                     </div> <!-- / age amount -->
                 
